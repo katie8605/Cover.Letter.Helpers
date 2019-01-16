@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+input[type=text] {
+    width:30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width:30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.form{
+    text-align: center;
+    margin-top: 2.3%;
+}
+
+.form label {
+    display: block;
+    margin: 0 auto;
+}
+
+#myProgress {
+    width: 100%;
+}
+
+#myBar {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+}
+
+.notShow{
+    display: none;
+}
+
+.step1, .step2, .step3, .step5{
+    display: block;
+    margin-top: 4.5%;
+}
+
+#myBar> .ui-progressbar-value {
+   background:#ffcc00;
+}
+
+button {
+    background-color: #ffcc00; 
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 2.2%;
+}
+
+button:hover {
+    background-color: white;
+    color: #008CBA;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+i{
+    font-size: 2em;
+}
+
+.next{
+    float: right;
+    margin-right: 3%;
+}
+
+.previous{
+    float: left;
+    margin-left: 3%;
+    clear: both;
+}
+
+.back {
+    float: left;
+    margin-left: 3%;
+    clear: both;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+#signup input.error, #signup select.error  {
+    background: #FFA9B8;
+    border: 1px solid red;
+}
+
+#signup  textarea.error, #signup select.error  {
+    background: #FFA9B8;
+    border: 1px solid red;
+}
+
+
+
+/*other devices--------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    input[type=text] {
+        width:90%;
+    }
+
+    .step1, .step2, .step3, .step5{
+        margin-top: 27%;
+    }
+    
+    textarea {
+        width:90%;
+    }  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 720px)  {  
+    input[type=text] {
+        width:90%;
+    }
+    
+    .step1, .step2, .step3, .step5{
+        margin-top: 15%;
+    }
+    
+    textarea {
+        width:90%;
+    }    
+}
+    
+@media only screen and (min-width: 721px) and (max-width: 920px)  {
+    input[type=text] {
+        width:90%;
+    }
+    
+    .step1, .step2, .step3, .step5{
+        margin-top: 11%;
+    }
+    
+    textarea {
+        width:90%;
+    }    
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1350px)  {  
+    input[type=text] {
+        width:90%;
+    }
+    
+    .step1, .step2, .step3, .step5{
+        margin-top: 7%;
+    }
+    
+    textarea {
+        width:90%;
+    }
+}
+
+/*---------------------------------------------*/
+
+
+
+
+
+

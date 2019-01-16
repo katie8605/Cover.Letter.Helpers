@@ -1,0 +1,378 @@
+body{
+    background-image: url(images/sweet-ice-cream-photography-97452-unsplash.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-color: #222;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1{
+    color: white;
+    margin: auto 0;
+    margin: 5%;
+    margin-bottom: 0.1%;
+    font-size: 4.8em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.step{
+    display: inline-block;
+    color: white;
+    width: 190px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.step:hover{
+    color: #ffcc00;
+    opacity: 0.8;
+}
+
+i{
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+i:hover {
+    color: #ffcc00;
+}
+
+.steps {
+    text-align: center;
+}
+
+h2{
+    font-size: 0.8em;
+    font-weight: 200; 
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.headline{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.view {
+    clear: both;
+    background-color: #ffcc00; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto auto;
+    cursor: pointer;  
+    position: relative;
+}
+
+.view:hover {
+    background-color: #3399ff;
+}
+
+.nav-bar:after, .selected:after  {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-bar:hover:after, .selected:hover:after{ 
+    width: 100%; 
+    left: 0; 
+}
+
+.subheadline{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-weight: 500;
+}
+
+a{
+    margin-right: 2%;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav {
+    background-color: #ffcc00;
+    padding: 1% 1%;
+}
+
+.fa-chevron-circle-right{
+    font-size: 1.5em;
+}
+
+.button{
+    margin-top: 1.3%;
+    text-align: center;
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.logo-format {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+}
+
+.show{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.waiting{
+    width: 300px;
+}
+
+.t2{
+    position: relative; 
+    z-index: 2;
+}
+
+.t3{
+    position: relative; 
+    z-index: 2;
+}
+
+.t4{
+    position: relative; 
+    z-index: 2;
+}
+
+.photo-credit {
+    color: white;
+    position: absolute;
+    font-size: 0.6em;
+    margin-left: 1%;
+    bottom: auto;
+}
+
+.photo-credit-home {
+    color: white;
+    position: absolute;
+    font-size: 0.6em;
+    margin-left: 1%;
+    bottom: 0;
+}
+
+.shadow {
+    box-shadow: 0px 0px 0px 10px #ffcc00;
+}
+
+.sub-shadow {
+    opacity: 0.7;
+}
+
+img {
+    width: 300px;
+}
+
+.templates-headline {
+    text-align: center;
+    font-size: 2.6em;
+    color: white;  
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.fa-angle-left, .fa-angle-right {
+    font-size: 1.5em;
+   
+    background-color: white;
+    border: 7px solid white;
+    color: black;
+    position: relative;
+}
+
+button {
+    background-color: #0073e6; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 1%;
+
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.selected{
+    background-color: #ffcc00;
+    padding: 0.5%;
+    margin-bottom: 2%;
+}
+
+.selected:hover{
+    padding: 0.2%;
+    background-color: transparent;
+}
+
+
+/*other devices--------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  
+   body{
+       background-size: 400%;
+       background-position: center;
+    }
+    
+    h1{
+        margin: 3%;
+        margin-top: 10%;
+        font-size: 2.1em;
+    }
+    
+    .step{
+        width: 60px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 3%;
+    }
+    
+    i{
+        font-size: 3em;
+        text-align: center;
+        color: white;
+    }
+    
+    h2{
+        font-size: 0.6em; 
+    }
+
+    h3{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 0.7em;
+    }   
+    
+    .view {
+        margin-top: 6%; 
+    }
+    
+    .subheadline{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+    
+    .fa-chevron-circle-right{
+        font-size: 0.8em;
+    }
+    
+    nav {
+        padding: 3% 4%;
+    }
+    
+    nav a {
+        font-size: 0.8em;
+    }
+    
+    .fa-angle-left, .fa-angle-right {
+        font-size: 1em;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 720px)  {  
+     body{
+         background-size: 250%;
+         background-position: center;
+    }
+    
+    h1{
+        margin: 3%;
+        margin-top: 10%;
+        font-size: 4.1em;
+    }
+    
+    .step{
+        width: 160px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 3%;
+    }
+    
+    i{
+        font-size: 4em;
+        text-align: center;
+        color: white;
+    }
+
+    h3{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 0.8em;
+    }
+    
+    .view {
+        margin-top: 3%;
+    }
+    
+    .subheadline{
+        font-size: 2.1em;
+    }
+    
+    .fa-chevron-circle-right{
+        font-size: 1.4em;
+    }
+    
+    nav {
+        padding: 3% 4%;
+    }  
+}
+    
+@media only screen and (min-width: 721px) and (max-width: 920px)  {
+    body{
+        background-size: 200%;
+        background-position: center;
+    }
+    nav {
+        padding: 2.6% 4%;
+    }   
+    
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1350px)  {  
+    body{
+       background-size: 220%;
+       background-position: center;
+    }
+}
+
+/*---------------------------------------------*/
+
+
+
