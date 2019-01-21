@@ -5,7 +5,7 @@ var file = '';
 $(document).ready(function() { 
     //four templates
     var temp = ['t1', 't2', 't3', 't4'];
-    $('.t2').css('width', '450');
+    
     
     $('.previous_temp').click(function(){
         if(i == 1) {
@@ -15,14 +15,14 @@ $(document).ready(function() {
         }
         
         $('.'+temp[i]).addClass('sub-shadow')
-        $('.'+temp[i]).css('z-index', '-1');
+        $('.'+temp[i]).css('z-index', '0');
         $('.'+temp[i]).removeClass('shadow')
-        $('.'+temp[i]).animate({width: '300'});    
+        $('.'+temp[i]).animate({width: '200'});    
         i--;
-        $('.'+temp[i]).css('z-index', '3');
+        $('.'+temp[i]).css('z-index', '1');
         $('.'+temp[i]).addClass('shadow')
         $('.'+temp[i]).removeClass('sub-shadow')
-        $('.'+temp[i]).animate({width: '450'});       
+        $('.'+temp[i]).animate({width: '200'});       
     }); // end previous button
     
     $('.next_temp').click(function(){
@@ -33,14 +33,14 @@ $(document).ready(function() {
         }
                 
         $('.'+temp[i]).addClass('sub-shadow')
-        $('.'+temp[i]).css('z-index', '-1');
+        $('.'+temp[i]).css('z-index', '0');
         $('.'+temp[i]).removeClass('shadow')
-        $('.'+temp[i]).animate({width: '300'});
+        $('.'+temp[i]).animate({width: '200'});
         i++;
-        $('.'+temp[i]).css('z-index', '3');
+        $('.'+temp[i]).css('z-index', '1');
         $('.'+temp[i]).addClass('shadow')
         $('.'+temp[i]).removeClass('sub-shadow')
-        $('.'+temp[i]).animate({width: '450'}); 
+        $('.'+temp[i]).animate({width: '200'}); 
     }); // end next button
     
     $('.selected').click(function(){
